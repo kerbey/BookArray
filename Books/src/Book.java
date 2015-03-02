@@ -1,12 +1,8 @@
-/*uml (unified modeling language) diagram on midterm example:(first row) class vehicle comes with (second row)attributes/objects
-private wheels (int),color(string),gas mileage,(third row) getters and setters, mutators; (encapsulation will be discussed later) 
- public setWheel this.wheel has to be used again; toString method for attributes
- authentification quiz w/ overloading methods
- */
+
 public class Book
 {
 	private String title, author;
-	private short numberOfPages;// <-could also be short
+	private short numberOfPages;
 
 	public Book(String title, String Author, short numberOfPages)
 	{
