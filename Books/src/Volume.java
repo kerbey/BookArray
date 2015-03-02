@@ -3,7 +3,7 @@ public class Volume
 {
 	private  String volumeName;
 	private short numberOfBooks;
-	private Book [] books;//=new Book [1];
+	private Book [] books;
 
 
 	public Volume(String volumeName, short numberOfBooks, Book[] bookArray)
@@ -50,7 +50,7 @@ public class Volume
 
 
 	public void ToString()
-	{
+	{//volume prints only once and author, number of pages, and title will change during the loop 
 		getBookArray();
 		String output="volumeName: "+getVolumeName()+"; number of books in volume : "+getNumberOfBooks();
 		System.out.println("\n"+output+"\n");
