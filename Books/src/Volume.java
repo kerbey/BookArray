@@ -1,6 +1,5 @@
-//import java.awt.print.Book;
 
-public class Volume//cycle class needs getter and setters y7
+public class Volume
 {
 	private  String volumeName;
 	private short numberOfBooks;
@@ -9,11 +8,9 @@ public class Volume//cycle class needs getter and setters y7
 
 	public Volume(String volumeName, short numberOfBooks, Book[] bookArray)
 	{
-		setVolumeName(volumeName);//this.volumeName=volumeName/*.toString()*/;
+		setVolumeName(volumeName);
 		setNumberOfBooks(numberOfBooks);
-		setBookArray(bookArray);//this.numberOfBooks=numberOfBooks;
-		//System.out.println("number of Books"+this.getNumberOfBooks());
-		//System.out.println("volumename ="+this.getVolumeName());
+		setBookArray(bookArray);
 	}
 
 
@@ -57,10 +54,10 @@ public class Volume//cycle class needs getter and setters y7
 		getBookArray();
 		String output="volumeName: "+getVolumeName()+"; number of books in volume : "+getNumberOfBooks();
 		System.out.println("\n"+output+"\n");
-		for(int x=0;x<books.length;x++)//for (Book b:books)
+		for(int x=0;x<books.length;x++)
 		{
-			System.out.println("book Number: "+(x+1)+"; author: "+books[x].getAuthor()+"; book title: "+books[x].getTitle()
-			+"; number of pages "+books[x].getNumberOfPages());
+                 System.out.println("book Number: "+(x+1)+"; author: "+books[x].getAuthor()+"; book title: "
+                 +books[x].getTitle()+"; number of pages "+books[x].getNumberOfPages());
 		}
 	}
 }
